@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsFeedActivity.NewsFeedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="backBtn"
+                android:paddingTop="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/arrow"
+                android:tint="#fff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backBtn"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="69dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:text="News Feed"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp18" />
+
+
+
+                <ImageView
+                    android:onClick="Rating"
+                    android:layout_marginLeft="76dp"
+                    android:tint="#fff"
+                    android:src="@drawable/starr"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"/>
+
+                <ImageView
+                    android:onClick="Sharing"
+                    android:layout_marginLeft="@dimen/sp18"
+                    android:tint="#fff"
+                    android:src="@drawable/share"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+   <ScrollView
+       android:layout_marginTop="70dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+
+               app:cardElevation="8dp"
+               android:layout_width="match_parent"
+               android:layout_height="200dp">
+
+               <LinearLayout
+                   android:layout_gravity="center"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp">
+
+
+
+
+                   <TextView
+                       android:layout_marginTop="30dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"                       android:textColor="@color/colorPrimary"
+                       android:fontFamily="serif"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+                       android:text="Bangladesh women take on India in WC opener."
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       android:id="@+id/next1"
+                       android:textColor="@color/colorPrimary"
+                       android:layout_marginTop="10dp"
+                       android:text="Today News "
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+
+                       android:layout_marginTop="@dimen/sp16"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       android:text="Posted : 23 Feb 12.30 PM by Admin"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="5dp"
+                       android:text="The Bangladesh Women’s team will face "
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+
+
+           </androidx.cardview.widget.CardView>
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="10dp"
+
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               app:cardElevation="8dp"
+               android:layout_width="match_parent"
+               android:layout_height="200dp">
+
+               <LinearLayout
+                   android:layout_marginTop="26dp"
+
+                   android:layout_gravity="center"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp">
+
+
+
+
+                   <TextView
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       android:textColor="@color/colorPrimary"
+                       android:fontFamily="serif"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+                       android:text="American daredevil dies in rocket launch."
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       android:id="@+id/next2"
+                       android:textColor="@color/colorPrimary"
+                       android:layout_marginTop="10dp"
+                       android:text="Today News "
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="@dimen/sp16"
+                       android:text="Posted : 23 Feb 12.30 PM by Admin"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+
+                       android:layout_marginTop="5dp"
+                       android:text="An amateur American astronaut who said he wanted to prove the Earth "
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               app:cardElevation="8dp"
+               android:layout_width="match_parent"
+               android:layout_height="200dp">
+
+               <LinearLayout
+                   android:layout_marginTop="26dp"
+                   android:layout_gravity="center"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp">
+
+
+
+
+                   <TextView
+                       android:layout_marginTop="6dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginLeft="20dp"
+                       android:textColor="@color/colorPrimary"
+                       android:fontFamily="serif"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+                       android:text="Glitter, sequins and skin: Rio's carnival kicks"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:layout_marginRight="10dp"
+                       android:layout_marginLeft="20dp"
+                       android:id="@+id/next3"
+                       android:textColor="@color/colorPrimary"
+                       android:layout_marginTop="10dp"
+                       android:text="Today News "
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:layout_marginRight="10dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginTop="@dimen/sp16"
+
+                       android:text="Posted : 23 Feb 12.30 PM by Admin"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:layout_marginRight="10dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginTop="5dp"
+                       android:text="Rio de Janeiro kicked off its ann covered skin, an over-the-top spectacle that this "
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+
+
+
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+
+
+
+   </ScrollView>
+
+
+
+
+</RelativeLayout>

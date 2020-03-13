@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/bdjob"
+            android:icon="@drawable/job"
+            android:title="BD Job" />
+
+
+
+
+        <item
+            android:id="@+id/gelleryyy"
+            android:icon="@drawable/gellaryicon"
+            android:title="Gallery" />
+
+
+        <item
+            android:id="@+id/nav_statement"
+            android:icon="@drawable/reading"
+            android:title="News Feed" />
+        <item
+            android:id="@+id/onlinenews"
+            android:icon="@drawable/television"
+            android:title="Online News TV " />
+
+
+
+        <item
+            android:id="@+id/websidelist"
+            android:icon="@drawable/worldwide"
+            android:title="Web Side List BD " />
+
+    </group>
+
+
+
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+
+            <item
+                android:id="@+id/contract"
+                android:icon="@drawable/contact"
+                android:title="Contact Us" />
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/collaboration"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/logouttt"
+                android:icon="@drawable/logout"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+
+
+
+
+</menu>
